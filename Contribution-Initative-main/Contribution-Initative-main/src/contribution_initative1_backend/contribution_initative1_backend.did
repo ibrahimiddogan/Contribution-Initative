@@ -1,0 +1,54 @@
+
+type User = record {
+    name: text;
+    lastname: text;
+    email: text;
+    password: text;
+    birthday: text;
+    totalDonate:nat32;
+
+};
+type userError = variant {
+    unfilled: text;
+    incorrectEmail: text;
+    incorrectPassword: text;
+    inUse: text;
+};
+
+type userResult = variant {
+    Success: text;
+    Error: userError;
+};
+type Result=variant{
+    Ok:userResult;
+    Err: userError;
+};
+type EstablishmentUser = record {
+    name: text;
+    description: text;
+    email: text;
+    password: text;
+    year: text;
+     totalDonate:nat32;
+};
+type Donation = record {
+  donor_user: text; 
+  donor_establishment: text;
+  amount: nat32;
+};
+//text,text,
+service : {
+    "greet": (text) -> (text) query;
+     "create_user":(text,text,text,text,text,nat32)-> (Result);
+     "create_establishment_user":(text,text,text,text,text,nat32)-> (Result);
+     "sort_esusers":()->(vec EstablishmentUser) query;
+     "sort_users":()->(vec User) query;
+     "donate":(nat32,text,text)->(Result);
+    "list_donate":()->(vec Donation ) query;
+    "list_top_donors":()->(vec text ) query;
+    "get_donations_by_email":(text)->(vec Donation)query;
+    "login_user":(text,text)->(Result);
+    "get_user_by_email":(text)->(opt User)query;
+    
+
+};

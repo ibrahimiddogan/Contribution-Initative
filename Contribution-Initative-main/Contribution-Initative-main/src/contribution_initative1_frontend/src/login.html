@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>contribution_initative1</title>
+        <base href="/" />
+        <link rel="icon" href="favicon.ico" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+      <style>
+        *{
+          font-family: "Poppins", sans-serif;
+        }
+      </style>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+          tailwind.config = {
+            theme: {
+              extend: {
+                colors: {
+                  primary: '#FFC94A',
+                  secondary:'#C08B5C',
+                  brown:'#795458',
+                  darkBlue:'#453F78'
+                }
+              }
+            }
+          }
+          
+        </script>
+      </head>
+<body class="bg-slate-700">
+    <nav class="bg-darkBlue text-white py-5 px-8 flex justify-between items-center">
+        <a href="#" class=" text-lg tracking-wide italic">Contribution Initative</a>
+        <div id="top-donate">
+        
+        </div>
+        
+      </nav>
+    
+    <div class="w-[800px] h-[500px] rounded-md bg-darkBlue absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+        <p class="text-center mt-8 text-white font-semibold text-2xl tracking-widest">Login</p>
+        <form id="loginForm" class="px-8 py-6">
+          <div class="mb-4">
+            <label for="email" class="block text-white text-sm font-semibold mb-2">Email</label>
+            <input type="email" id="email" name="email" class="w-full px-3 py-2 rounded-md bg-white text-gray-800">
+          </div>
+          <div class="mb-4">
+            <label for="password" class="block text-white text-sm font-semibold mb-2">Password</label>
+            <input type="password" id="password" name="password" class="w-full px-3 py-2 rounded-md bg-white text-gray-800">
+          </div>
+          <button id="btn_login" type="submit" class="w-full bg-green-400 text-white font-semibold mt-3 py-2 rounded-md hover:bg-green-600 transition duration-200">Login</button>
+          <p id="login_info" class="text-green-400 text-center mt-8 text-md"></p>
+        </form>
+      </div>
+      <script src="login.js"></script>
+</body>
+</html>

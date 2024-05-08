@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>contribution_initative1</title>
+    <base href="/" />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            font-family: "Poppins", sans-serif;
+        }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#FFC94A',
+                        secondary: '#C08B5C',
+                        brown: '#795458',
+                        darkBlue: '#453F78'
+                    }
+                }
+            }
+        }
+
+    </script>
+</head>
+
+<body class="bg-slate-200">
+    <nav class="bg-darkBlue text-white py-5 px-8 flex justify-between items-center">
+        <a href="#" class=" text-lg tracking-wide italic">Contribution Initative</a>
+        <div id="top-donate">
+
+        </div>
+        <div class="flex gap-4 ">
+            <a href="profile.html" id="loginUser" class="cursor-pointer">Login</a>
+            <span id="registerUser" class="cursor-pointer ">Register</span>
+        </div>
+    </nav>
+    <div class="mt-16 flex  justify-center items-center  ">
+        <div><img src="/foto.webp" class="w-40 " alt="avatar">
+            <div class=" py-2 px-3 text-center  border-2 border-secondary mt-6  rounded-full mb-2 ">
+                <span class="text-secondary italic">Total Donate :</span>
+                <span class="ml-1"> <i class="text-green-400 font-semibold" id="total_donate">30 $</i></span>
+            </div>
+        </div>
+        <div class=" flex flex-col    pb-20 justify-center gap-4 text-base  ">
+            <div class="flex gap-20  px-10 ">
+                <div>
+                    <span class="text-secondary">Name: </span>
+                    <span id="name">Cem Kandemir</span>
+                </div>
+                <div>
+                    <span class="text-secondary">Last Name: </span>
+                    <span id="last_name">a@gmail.com</span>
+                </div>
+            </div>
+            <div class="flex gap-16 px-10 ">
+                <div>
+                    <span class="text-secondary">Birthday: </span>
+                    <span id="birthday">a@gmail.com</span>
+                </div>
+                <div>
+                    <span class="text-secondary">Email: </span>
+                    <span id="email">a@gmail.com</span>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class=" mt-24 text-2xl border-t-2 border-b-2 border-black py-8 flex items-center justify-center">
+        <p>User's Donations will be shown here soon ...</p>
+    </div>
+    <script src="profile.js"></script>
+</body>
+
+</html>

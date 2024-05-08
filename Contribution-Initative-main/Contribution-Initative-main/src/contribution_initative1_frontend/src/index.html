@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>contribution_initative1</title>
+  <base href="/" />
+  <link rel="icon" href="favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <style>
+    * {
+      font-family: "Poppins", sans-serif;
+    }
+  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#FFC94A',
+            secondary: '#C08B5C',
+            brown: '#795458',
+            darkBlue: '#453F78'
+          }
+        }
+      }
+    }
+
+  </script>
+</head>
+
+<body>
+  <nav class="bg-darkBlue text-white py-5 px-8 flex justify-between items-center">
+    <a href="#" class=" text-lg tracking-wide italic">Contribution Initative</a>
+    <div id="top-donate">
+
+    </div>
+    <div class="flex gap-4">
+      <a href="login.html" id="loginUser" class="cursor-pointer">Login</a>
+      <span id="registerUser" class="cursor-pointer ">Register</span>
+    </div>
+  </nav>
+  <div
+    class="absolute top-17 right-0  flex flex-col z-999 bg-slate-100 max-h-screen px-4 w-96 py-6 shadow-md rounded-sm overflow-y-scroll">
+    <p class="text-center  font-semibold text-xl italic text-primary mb-6 px-4">Last Donates</p>
+    <ul class="flex gap-6 flex-col " id="donate-list">
+      <!-- li added dynamic from backend -->
+    </ul>
+  </div>
+  
+  <div class="pl-20 pt-6 flex flex-col gap-8" id="establishment-list">
+    <div class="flex items-center gap-4 border-4 border-sky-600 rounded-xl px-4 py-4 w-[900px] bg-sky-600 shadow-md">
+      <img src="kizilay.jpg" class="w-36" alt="">
+      <div>
+        <p class="text-sky-950 font-semibold">Kızılay</p>
+        <p class="w-[600px] mt-1 text-stone-200 text-sm">
+         
+Turkish Red Crescent (Kızılay) is an organization that conducts humanitarian aid and social service activities as part of the International Red Cross and Red Crescent Movement. 
+Turkish Red Crescent carries out various activities such as providing assistance in disasters 
+and emergencies, organizing blood donation campaigns, and supporting the poor and those in need. </p>
+          <p class="w-[600px] mt-2.5 ">Total Donate: <i class="text-white">500.000 $</i></p>
+      </div>
+      <button class="bg-green-500 text-slate-100 py-1.5 px-2.5 rounded-md">Donate</button>
+    </div>
+    
+    <div class="flex items-center gap-4 border-4 border-sky-600 rounded-xl px-4 py-4 w-[900px] bg-sky-600 shadow-md">
+      <img src="/eUserImage-1.webp" class="w-36" alt="">
+      <div>
+        <p class="text-sky-950 font-semibold">CleanSky Intitiavie</p>
+        <p class="w-[600px] mt-1 text-stone-200 text-sm"> CleanSky Initiative is a sustainability platform designed to operate on the Internet Computer. This platform is intended to raise awareness about eco-friendly lifestyles and encourage collaboration for a sustainable world.</p>
+          <p class="w-[600px] mt-2.5 ">Total Donate: <i class="text-white">250.000 $</i></p>
+      </div>
+      <button class="bg-green-500 text-slate-100 py-1.5 px-2.5 rounded-md">Donate</button>
+    </div>
+
+    <div class="flex items-center gap-4 border-4 border-sky-600 rounded-xl px-4 py-4 w-[900px] bg-sky-600 shadow-md">
+      <img src="/hayvan.jpg" class="w-36" alt="">
+      <div>
+        <p class="text-sky-950 font-semibold">PETA</p>
+        <p class="w-[600px] mt-1 text-stone-200 text-sm">
+       
+PETA (People for the Ethical Treatment of Animals) is a non-profit organization that advocates for the ethical treatment of animals, promoting respect for their right to life and protection from cruelty. PETA encourages reducing the use of animal products and aims to raise awareness about the use of animals.</p>
+          <p class="w-[600px] mt-2.5 ">Total Donate: <i class="text-white">100.000 $</i></p>
+      </div>
+      <button class="bg-green-500 text-slate-100 py-1.5 px-2.5 rounded-md">Donate</button>
+    </div>
+  
+    <!-- establishment items added from backend -->
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>

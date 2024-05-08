@@ -1,0 +1,30 @@
+{
+  "canisters": {
+    "contribution_initative1_backend": {
+      "candid": "src/contribution_initative1_backend/contribution_initative1_backend.did",
+      "package": "contribution_initative1_backend",
+      "type": "rust"
+    },
+    "contribution_initative1_frontend": {
+      "dependencies": [
+        "contribution_initative1_backend"
+      ],
+      "frontend": {
+        "build": "npm run build"
+      },
+      "source": [
+        "src/contribution_initative1_frontend/assets",
+        "dist/contribution_initative1_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
